@@ -2,30 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
+    <meta
+      name="description"
+      content="Frontend Mentor challenge junior level. HTML, CSS and JAVASCRIPT"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png" />
     <title>Frontend Mentor | Expenses chart component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total this month $478.33
-    +2.4% from last month
-    <p>Hello</p>
+    <div class="container">
+      <header>
+        <p>My balance <span> $921.48</span></p>
+      </header>
+      <section>
+        <h3>Spending - Last 7 days</h3>
+        <section>
+          <div class=""><p>mon</p></div>
+          <div class=""><p>tue</p></div>
+          <div class=""><p>wed</p></div>
+          <div class=""><p>thu</p></div>
+          <div class=""><p>fri</p></div>
+          <div class=""><p>sat</p></div>
+          <div class=""><p>sun</p></div>
+        </section>
+        <div class="">
+          <p>Total this month <span>$478.33</span></p>
+          <p><span>+2.4%</span>from last month</p>
+        </div>
+      </section>
+    </div>
 
-    <p>Hello World!</p>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
