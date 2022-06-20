@@ -1,3 +1,66 @@
+/* custom properties */
+:root {
+  /* primary color */
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  /* neutral color */
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+  --font: "DM Sans", sans-serif;
+  --font-size: 1.8rem;
+}
+
+/* CSS RESETS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px *100%s= 62.5% -> 1rem = 10px */
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--cream);
+}
+
+/* COMPONENT STYLES */
+
+/* CONTAINER  */
+.container {
+  font-size: var(--font-size);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 54rem;
+  margin: 0 auto;
+  margin-top: clamp(6.6rem, 2.4803rem + 10.9859vw, 18.3rem);
+}
+/* HEADER-CONTAINER  */
+.header {
+  color: var(--very-pale-orange);
+  background-color: var(--soft-red);
+  height: clamp(10rem, 9.1549rem + 2.2535vw, 12.4rem);
+  padding: 2rem;
+  border-radius: clamp(1rem, 0.8239rem + 0.4695vw, 1.5rem);
+}
+.header__text {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.header__balance {
+  font-size: 2rem;
+  font-weight: 700;
+}
+/* CHART*/
+
+/* footer styles */
 .attribution {
   font-size: 11px;
   text-align: center;
