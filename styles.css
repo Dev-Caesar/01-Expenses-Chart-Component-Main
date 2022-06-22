@@ -93,6 +93,7 @@ body {
   justify-self: stretch;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -100,6 +101,7 @@ body {
   background-color: var(--soft-red);
   height: 5rem;
   border-radius: 0.5rem;
+  width: 100%;
   cursor: pointer;
 }
 .bar__component:hover {
@@ -114,10 +116,11 @@ body {
 }
 .current__amount {
   text-align: center;
-  font-size: clamp(1rem, 0.7333rem + 0.7407vw, 1.8rem);
+  font-size: clamp(1.3rem, 0.4667rem + 0.9259vw, 1.8rem);
   color: var(--very-pale-orange);
   border-radius: 0.2rem;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0.1rem;
+  width: 4.5rem;
   background-color: var(--dark-brown);
   opacity: 0;
   transition: all 0.2s ease-in-out;
