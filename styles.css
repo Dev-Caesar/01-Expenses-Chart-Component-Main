@@ -76,7 +76,7 @@ body {
   color: var(--dark-brown);
   font-weight: 700;
   font-size: clamp(2.2rem, 1.6rem + 1.6667vw, 3rem);
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 
 .bars__container {
@@ -109,18 +109,24 @@ body {
 }
 .active-bar {
   background-color: var(--cyan);
-  height: 10rem;
+  height: 20rem;
 }
 .active-bar:hover {
   background-color: #b4dfe5;
 }
+.bar--2 {
+  height: 10.6rem;
+}
+.bar--5 {
+  height: 16.6rem;
+}
 .current__amount {
   text-align: center;
-  font-size: clamp(1.3rem, 0.4667rem + 0.9259vw, 1.8rem);
+  font-size: clamp(1.5rem, 0.4667rem + 0.9259vw, 2rem);
   color: var(--very-pale-orange);
   border-radius: 0.2rem;
-  padding: 0.5rem 0.1rem;
-  width: 4.5rem;
+  padding: clamp(0.2rem, 4.4718rem + 1.4085vw, 0.5rem);
+  width: clamp(5rem, 4.4718rem + 1.4085vw, 6.5rem);
   background-color: var(--dark-brown);
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -184,9 +190,6 @@ a:active {
 
 @media screen and (min-width: 39.375em) {
   .current__amount {
-    padding: 1rem 0.1rem;
-    width: 7rem;
     border-radius: 0.5rem;
-    font-size: 1em;
   }
 }
