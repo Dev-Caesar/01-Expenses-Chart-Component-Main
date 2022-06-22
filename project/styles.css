@@ -65,7 +65,7 @@ body {
 .logo {
   max-inline-size: 8rem;
 }
-/* CHART*/
+/* BAR CHART*/
 .chart__container {
   background-color: var(--very-pale-orange);
   padding: clamp(2.4rem, 1.35rem + 2.9167vw, 3.8rem);
@@ -76,7 +76,7 @@ body {
   color: var(--dark-brown);
   font-weight: 700;
   font-size: clamp(2.2rem, 1.6rem + 1.6667vw, 3rem);
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .bars__container {
@@ -84,21 +84,49 @@ body {
   grid-template-columns: repeat(7, minmax(3rem, 5rem));
   justify-content: space-between;
   align-items: end;
+  justify-items: center;
   column-gap: 1.1rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid var(--cream);
 }
+.bar {
+  justify-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .bar__component {
   background-color: var(--soft-red);
-  height: 10rem;
+  height: 5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+.bar__component:hover {
+  background-color: #ff9b87;
 }
 .active-bar {
   background-color: var(--cyan);
-  height: 20rem;
+  height: 10rem;
+}
+.active-bar:hover {
+  background-color: #b4dfe5;
+}
+.current__amount {
+  text-align: center;
+  font-size: clamp(1rem, 0.7333rem + 0.7407vw, 1.8rem);
+  color: var(--very-pale-orange);
+  border-radius: 0.2rem;
+  padding: 0.4rem 0;
+  background-color: var(--dark-brown);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.bar:hover .current__amount,
+.bar:active .current__amount {
+  opacity: 1;
 }
 .week-day {
-  margin-top: 1rem;
   font-size: 1.4rem;
   text-align: center;
   color: var(--medium-brown);
