@@ -1,8 +1,8 @@
-import data from './data.json' assert { type: 'json' };
+import data from "./data.json" assert { type: "json" };
 
-const amountElementsNodeList = document.querySelectorAll('.amount');
-const barElementsNodeList = document.querySelectorAll('.bar__component');
-const loadChart = document.querySelector('.load-chart');
+const amountElementsNodeList = document.querySelectorAll(".amount");
+const barElementsNodeList = document.querySelectorAll(".bar__component");
+const loadChart = document.querySelector(".load-chart");
 // get current date and day
 const getCurrentDay = function () {
   const date = new Date();
@@ -16,12 +16,12 @@ const displayBars = function () {
     amountElementsNodeList[index].textContent = `$${obj.amount}`;
     barElementsNodeList[index].style.height = `${parseInt(obj.amount / 3)}rem`;
     if (index === getCurrentDay()) {
-      document.querySelector(`.bar--${index}`).classList.add('active-bar');
+      document.querySelector(`.bar--${index}`).classList.add("active-bar");
     }
   });
 };
 
-loadChart.addEventListener('click', e => {
+loadChart.addEventListener("click", (e) => {
   e.preventDefault();
   displayBars();
 });
