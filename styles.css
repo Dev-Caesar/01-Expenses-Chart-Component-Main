@@ -91,7 +91,7 @@ body {
   column-gap: 1rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid var(--cream);
-  min-height: 42vh;
+  min-height: 20vh;
 }
 .bar {
   justify-self: stretch;
