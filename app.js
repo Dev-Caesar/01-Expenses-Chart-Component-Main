@@ -2,7 +2,7 @@ import data from './data.json' assert { type: 'json' };
 
 const amountElementsNodeList = document.querySelectorAll('.amount');
 const barElementsNodeList = document.querySelectorAll('.bar__component');
-
+const loadChart = document.querySelector('.load-chart');
 // get current date and day
 const getCurrentDay = function () {
   const date = new Date();
@@ -20,3 +20,8 @@ const displayBars = function () {
     }
   });
 };
+
+loadChart.addEventListener('click', e => {
+  e.preventDefault();
+  displayBars();
+});
