@@ -38,21 +38,20 @@ body {
   font-size: var(--font-size);
   display: flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 2rem;
   width: 90%;
   max-width: 54rem;
+  min-width: min-content;
   margin: 0 auto;
   margin-top: clamp(6rem, 2.4803rem + 10.9859vw, 9rem);
 }
 /* HEADER-CONTAINER  */
 .header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   color: var(--very-pale-orange);
   background-color: var(--soft-red);
-  height: clamp(0.8rem, 9.1549rem + 2.2535vw, 10rem);
+  height: clamp(0.7rem, 9.1549rem + 2.2535vw, 10rem);
   padding: 2rem;
   border-radius: var(--border-radius);
 }
@@ -69,7 +68,6 @@ body {
 }
 /* BAR CHART*/
 .chart__container {
-  width: 100%;
   background-color: var(--very-pale-orange);
   padding: clamp(2.4rem, 1.35rem + 2.9167vw, 3.8rem);
   border-radius: var(--border-radius);
@@ -167,6 +165,7 @@ body {
   padding: 1rem 0;
   width: 50%;
   border-radius: 0.5rem;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
