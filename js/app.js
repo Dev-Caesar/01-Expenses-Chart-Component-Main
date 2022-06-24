@@ -1,6 +1,5 @@
 const barsContainer = document.querySelector('.bars__container');
 const loadChart = document.querySelector('.load-chart');
-
 // Get Current Day
 const getCurrentDay = function () {
   const date = new Date();
@@ -9,7 +8,6 @@ const getCurrentDay = function () {
   return currentDay;
 };
 let currentDay;
-
 //Generate Bar Template
 const barsTemplate = function (chartObject, index) {
   let barHeight = parseInt(chartObject.amount / 3);
@@ -23,7 +21,6 @@ const barsTemplate = function (chartObject, index) {
   </div>
   `;
 };
-
 // Render Bar Chart to the DOM
 const renderBar = function (data) {
   data.forEach((object, index) => {
