@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://your-solution-url.com)
+- Live Site URL: [01-Expenses-Chart-Component-Main-ive-site](https://dev-caesar.github.io/01-Expenses-Chart-Component-Main/)
 
 ### Built with
 
@@ -43,4 +43,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Dev_Caesar](https://www.frontendmentor.io/profile/Dev-Caesar)
