@@ -110,10 +110,10 @@ body {
 .bar__component:hover {
   background-color: #ff9b87;
 }
-.active-bar {
+.active-day {
   background-color: var(--cyan);
 }
-.active-bar:hover {
+.active-day:hover {
   background-color: #b4dfe5;
 }
 
