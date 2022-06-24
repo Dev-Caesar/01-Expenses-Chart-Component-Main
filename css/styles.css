@@ -39,7 +39,8 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  width: 90%;
+  width: 95vw;
+  height: 100vh;
   max-width: 54rem;
   min-width: min-content;
   margin: 0 auto;
@@ -119,10 +120,10 @@ body {
   position: relative;
   z-index: 10;
   text-align: center;
-  font-size: clamp(1.2rem, 0.4667rem + 0.9259vw, 2.2rem);
+  font-size: clamp(1.5rem, 0.4667rem + 0.9259vw, 2.8rem);
+  padding: clamp(0.3rem, 0.4667rem + 0.9259vw, 0.7rem);
   color: var(--very-pale-orange);
   border-radius: 0.2rem;
-  padding: clamp(0.1rem, 0.4667rem + 0.9259vw, 0.4rem);
   background-color: var(--dark-brown);
   opacity: 1;
   transition: all 0.2s ease-in-out;
@@ -208,7 +209,6 @@ a:active {
 
 @media screen and (min-width: 64em) {
   .amount {
-    padding: clamp(0.3rem, 4.4718rem + 1.4085vw, 0.6rem);
     opacity: 0;
     border-radius: 0.5rem;
   }
