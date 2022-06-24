@@ -124,15 +124,12 @@ body {
   font-size: clamp(1.2rem, 0.4667rem + 0.9259vw, 2.2rem);
   color: var(--very-pale-orange);
   border-radius: 0.2rem;
-  padding: clamp(0.1rem, 4.4718rem + 1.4085vw, 0.6rem);
+  padding: clamp(0.1rem, 0.4667rem + 0.9259vw, 0.4rem);
   background-color: var(--dark-brown);
-  opacity: 0;
+  opacity: 1;
   transition: all 0.2s ease-in-out;
 }
-.bar:hover .amount,
-.bar:active .amount {
-  opacity: 1;
-}
+
 .week-day {
   font-size: 1.4rem;
   text-align: center;
@@ -210,8 +207,16 @@ a:active {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 39.375em) {
-  .current__amount {
+@media screen and (min-width: 64em) {
+  .amount {
+    padding: clamp(0.3rem, 4.4718rem + 1.4085vw, 0.6rem);
+    opacity: 0;
     border-radius: 0.5rem;
+  }
+  .bar:hover .amount {
+    opacity: 1;
+  }
+  .bar:active .amount {
+    opacity: 1;
   }
 }
