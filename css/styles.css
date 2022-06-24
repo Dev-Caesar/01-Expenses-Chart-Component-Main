@@ -60,7 +60,7 @@ body {
   margin-bottom: 1rem;
 }
 .header__balance {
-  font-size: 2rem;
+  font-size: clamp(2rem, 1.8239rem + 0.4695vw, 2.5rem);
   font-weight: 700;
 }
 .logo {
