@@ -41,11 +41,10 @@ body {
   justify-content: center;
   row-gap: 2rem;
   min-height: 100vh;
-  width: 90vw;
+  width: 95vw;
   max-width: 54rem;
-
   margin: 0 auto;
-  margin-top: clamp(6rem, 2.4803rem + 10.9859vw, 9rem);
+  padding: 1rem;
 }
 /* HEADER-CONTAINER  */
 .header {
@@ -91,7 +90,7 @@ body {
   column-gap: 1rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid var(--cream);
-  min-height: 20vh;
+  height: 27rem;
 }
 .bar {
   justify-self: stretch;
@@ -186,7 +185,7 @@ body {
 /* footer styles */
 .attribution {
   padding: 1rem;
-  margin: 2rem 0 2rem;
+
   font-size: 1.5rem;
   text-align: center;
   color: var(--medium-brown);
