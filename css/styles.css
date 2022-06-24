@@ -40,7 +40,6 @@ body {
   flex-direction: column;
   row-gap: 2rem;
   width: 95vw;
-  height: 100vh;
   max-width: 54rem;
   min-width: min-content;
   margin: 0 auto;
