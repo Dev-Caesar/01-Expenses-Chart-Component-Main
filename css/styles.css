@@ -38,10 +38,12 @@ body {
   font-size: var(--font-size);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 2rem;
-  width: 95vw;
+  min-height: 100vh;
+  width: 90vw;
   max-width: 54rem;
-  min-width: min-content;
+
   margin: 0 auto;
   margin-top: clamp(6rem, 2.4803rem + 10.9859vw, 9rem);
 }
@@ -82,7 +84,7 @@ body {
 
 .bars__container {
   display: grid;
-  grid-template-columns: repeat(7, minmax(3rem, 5rem));
+  grid-template-columns: repeat(7, minmax(2.5rem, 5rem));
   justify-content: space-between;
   align-items: end;
   justify-items: center;
